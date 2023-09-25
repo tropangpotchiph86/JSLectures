@@ -26,13 +26,13 @@ There are many ways to do this. Let's take a look:
 
 ```JavaScript
 //Solution1:
-
+const myNewString = myString.charAt(0).toUpperCase() + myString.substring(1);
 
 //Solution2:
-
+const myNewString = myString[0].toUpperCase() + myString.substring(1);
 
 //Solution3:
-
+const myNewString = `${myString[0].toUpperCase()}${myString.slice(1)}`;
 
 
 ```
