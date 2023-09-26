@@ -9,4 +9,10 @@ console.warn('Warning');
 console.groupEnd(); 
 
 Shortcut key: Shift + Alt + A
-*/
+ */
+
+// console.group('simple');
+// console.log(x);
+// console.error('Alert');
+// console.warn('Warning');
+// console.groupEnd();
