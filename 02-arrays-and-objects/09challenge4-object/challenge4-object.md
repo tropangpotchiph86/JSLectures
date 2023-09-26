@@ -23,6 +23,35 @@ Turn the library object into a JSON string
 
 ```js
 // Step 1
+const library = [
+  {
+    title: 'Harry Potter',
+    author: 'JK Rowling',
+    status: {
+      own: true,
+      reading: false,
+      read: false,
+    },
+  },
+  {
+    title: 'Mockingjay',
+    author: 'Suzanne Collins',
+    status: {
+      own: true,
+      reading: false,
+      read: false,
+    },
+  },
+  {
+    title: 'Twilight',
+    author: 'Ryan Azur',
+    status: {
+      own: true,
+      reading: false,
+      read: false,
+    },
+  },
+];
 ```
 
 ### Step 2 Solution
