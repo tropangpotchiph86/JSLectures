@@ -19,4 +19,3 @@
 (function hello() {
   console.log('Hello from named function');
 })();
-hello();
