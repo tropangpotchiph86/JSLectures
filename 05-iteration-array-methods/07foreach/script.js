@@ -1,20 +1,35 @@
-//Long version
+const socials = ['Twitter', 'LinkedIn', 'Facebook', 'Instagram', 'Tiktok'];
 
-const names = ['Ryan', 'Pau', 'Alden', 'Cat', 'Dianne', 'JM'];
-//i=0 hanggang i < 6; i++
+// console.log(socials.__proto__);
 
-for (let i = 0; i < names.length; i++) {
-  console.log(names[i]);
-}
+//Long method
+// socials.forEach(function (item) {
+//   console.log(item);
+// });
 
-console.log(names[0]);
-console.log(names[1]);
-console.log(names[2]);
-console.log(names[3]);
-console.log(names[4]);
-console.log(names[5]);
+//arrow function
+// socials.forEach((item) => console.log(item));
 
-//ForEach
-names.forEach((name) => {
-  console.log(name);
-});
+//pass in the index and original array
+// socials.forEach((item, index, arr) => console.log(`${index} - ${item}`, arr));
+
+//Using a named function in foreach
+// function logSocials(social) {
+//   console.log(social);
+// }
+
+// socials.forEach(logSocials);
+
+//Array of Objects
+const socialObjs = [
+  { name: 'Twitter', url: 'https://twitter.com' },
+  { name: 'Facebook', url: 'https://facebook.com' },
+  { name: 'LinkedIn', url: 'https://linkedin.com' },
+  { name: 'Instagram', url: 'https://instagram.com' },
+  { name: 'TikTok', url: 'https://tiktok.com' },
+];
+//objects
+// socialObjs.forEach((item) => console.log(item));
+
+//to access the property
+socialObjs.forEach((item) => console.log(item.url));

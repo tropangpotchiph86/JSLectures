@@ -9,6 +9,7 @@
 // for (let index = 0; index < array.length; index++) {
 //   const element = array[index];
 // }
+
 //Output: Number 'i' where i is 0 to 9
 // for (let i = 0; i < 10; i++) {
 //   console.log('Number ' + i);
