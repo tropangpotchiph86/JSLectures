@@ -14,25 +14,25 @@
 
 //##################################################
 //refactoring
-fetch('./movies.json')
-  .then((response) => response.json())
-  .then((data) => console.log(data));
+// fetch('./movies.json')
+//   .then((response) => response.json())
+//   .then((data) => console.log(data));
 
-//##################################################
-//Fetching a text
-fetch('./test.txt')
-  .then((response) => response.text())
-  .then((data) => console.log(data));
+// //##################################################
+// //Fetching a text
+// fetch('./test.txt')
+//   .then((response) => response.text())
+//   .then((data) => console.log(data));
 //##################################################
 //Fetching from an API
-fetch('https://api.github.com/users')
+fetch('https://jsonplaceholder.typicode.com/todos')
   .then((response) => response.json())
   .then((data) => console.log(data));
 //##################################################
-fetch('https://api.github.com/users/tropangpotchiph86')
-  .then((response) => response.json())
-  .then((data) => console.log(data));
+// fetch('https://api.github.com/users/tropangpotchiph86')
+//   .then((response) => response.json())
+//   .then((data) => console.log(data));
 //##################################################
-fetch('https://api.github.com/users/tropangpotchiph86')
-  .then((response) => response.json())
-  .then((data) => (document.querySelector('h1').textContent = data.login));
+// fetch('https://api.github.com/users/tropangpotchiph86')
+//   .then((response) => response.json())
+//   .then((data) => (document.querySelector('h1').textContent = data.login));
