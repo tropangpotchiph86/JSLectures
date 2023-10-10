@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather Forecast 04</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="style.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Weather Forecast UI Demo</h1>
+      <div class="input-container">
+        <input
+          type="text"
+          id="city-input"
+          placeholder="Enter city name"
+        />
+        <button onclick="getWeather()">Get Weather</button>
+      </div>
+      <div
+        id="weather-container"
+        class="hidden"
+      >
+        <h2>Hourly Forecast for Today</h2>
+        <div id="hourly-forecast"></div>
+        <h2>Weekly Forecast</h2>
+        <table id="weekly-forecast">
+          <tr>
+            <th>Day</th>
+            <th>Temperature (°C)</th>
+            <th>Humidity (%)</th>
+            <th>Pressure (hPa)</th>
+            <th>Description</th>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
